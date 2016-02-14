@@ -8,6 +8,8 @@
 </head>
 <body>
 
+	<!-- Header created for website -->
+	
 	<header id="site_heading"> 
 	
 		<div id="header_btns"> 	

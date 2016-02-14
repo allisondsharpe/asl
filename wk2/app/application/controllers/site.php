@@ -1,6 +1,6 @@
 <?php
 
-class Site extends CI_Controller { /* main controller 'site' created for the home page */
+class Site extends CI_Controller { /* main controller 'Site' created for 'content_home' view (home page) */
 	
 	/* Home Page */
 	
@@ -14,9 +14,9 @@ class Site extends CI_Controller { /* main controller 'site' created for the hom
 		$this->load->view("site_footer");
 	}
 	
-	/* Login */
+	/* Login Form */
 	
-	public function verify_login() {
+	public function verify_login() { /* verifying the data and setting rules for email & password */
 		$this->form_validation->set_rules('email', 'Email', 'required|valid_email'); /* will check for form validation - (form/db name, display name, values/rules) */
 		$this->form_validation->set_rules('password', 'Password', 'required|callback_verifyUser');
 	
@@ -29,7 +29,7 @@ class Site extends CI_Controller { /* main controller 'site' created for the hom
 		}
 	}
 	
-	public function verifyUser() 
+	public function verifyUser() /* will grab the data user enters in and verifies whether or not they are have intered in a valid email address and password */
 	{
 		$email = $this->input->post('email'); /* grabbing entered data from user */
 		$password = $this->input->post('password');
@@ -39,7 +39,7 @@ class Site extends CI_Controller { /* main controller 'site' created for the hom
 		if($this->site_model->login($email, $password)) { /* if user's email and password validate as true, the if statement will return true */
 			return true;
 		}else{
-			$this->form_validation->set_message('verifyUser', 'Incorrect email or password.'); /* if user's email and password return false, they'll receive an error message */
+			$this->form_validation->set_message('verifyUser', 'Incorrect email or password. Please try again.'); /* if user's email and password return false, they'll receive this error message */
 			return false;
 		}
 	}

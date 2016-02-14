@@ -1,9 +1,8 @@
 <?php
 
-class Entries_model extends CI_Model {
+class Entries_model extends CI_Model { /* 'Entries_model' created for 'user_entries.php' controller */
 	function __construct()
 	{
-		/* calling model contructor */
 		parent::__construct();
 	}
 
@@ -14,6 +13,7 @@ class Entries_model extends CI_Model {
 		return $query->result();
 	}
 	
+	/* will grab one row by their id at a time */
 	function getonerow($id)
 	{
 		$this->db->where('id', $id);

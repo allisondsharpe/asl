@@ -1,3 +1,5 @@
+<!-- Footer created for website -->
+
 <footer>
 	<section class="footer_sec">
 		<h4> About Us </h4>

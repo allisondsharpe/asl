@@ -12,11 +12,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 
 	<div id="content">
+	
+		<!-- Logout -->
 
 		<a href="http://localhost/app/index.php/site/"> Logout </a>
 
 
-		<!---- Read/View ----->
+		<!---- View/Edit/Delete content ----->
 	
 		<form action="<?php echo site_url('index.php/user_entries/edit'); ?>" method="post">
 
@@ -55,6 +57,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</form>	
 	
 	</div>
+	
+	
+<!-- Scripts -->	
 
 <script type="text/javascript" src="<?php echo base_url("assets/js/jQuery-1.10.2.js"); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url("assets/js/bootstrap.js"); ?>"></script>

@@ -7,6 +7,9 @@
 	<link href="<?php echo base_url() ; ?>css/style.css" type="text/css" rel="stylesheet" />
 </head>
 
+
+<!-- Navigational view created for Dashboard and New Table views -->
+
 <div id="content">
 
 	<nav>

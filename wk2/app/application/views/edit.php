@@ -14,7 +14,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<form action="<?php echo site_url('index.php/user_entries/update'); ?>" method="post">
 		
-		<!-- Table that will contain fields for user to submit their information -->
+		<!-- Create content -->
 
 		<table>
 		

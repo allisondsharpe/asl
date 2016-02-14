@@ -37,7 +37,9 @@
 			<a href="<?php echo base_url() ; ?>index.php/user_signup" id="signup_btn"> Sign Up </a>
 		</div>
 	</div>
+	
 
+<!-- Scripts -->
 
 <script type="text/javascript" src="<?php echo base_url("assets/js/jQuery-1.10.2.js"); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url("assets/js/bootstrap.js"); ?>"></script>

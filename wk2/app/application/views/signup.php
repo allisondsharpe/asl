@@ -13,7 +13,7 @@
 	
 		<!--- Sign Up Form --->
 		
-		<?=form_open(base_url() . 'index.php/user_entries/dashboard') ?>
+		<?=form_open(base_url() . 'index.php/user_signup/') ?>
 		
 			<table cellspacing='3' cellpadding='3'>
 			
@@ -53,6 +53,9 @@
 		
 	
 	</div>
+	
+	
+<!-- Scripts -->
 
 <script type="text/javascript" src="<?php echo base_url("assets/js/jQuery-1.10.2.js"); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url("assets/js/bootstrap.js"); ?>"></script>
