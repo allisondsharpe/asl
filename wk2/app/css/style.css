@@ -1,0 +1,129 @@
+/* Body/Container elements */
+
+body {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/* Header */
+
+#home_heading {
+	background-color: #4d4d4d;
+	font-family: "Noteworthy Bold";
+	border-bottom: 1px solid #000;
+}
+
+#site_heading {
+	background-color: #4d4d4d;
+	font-family: "Noteworthy Bold";
+	border-bottom: 1px solid #000;
+	height: 100px;
+}
+
+h1 {
+	color: #fff;
+	width: 800px;
+	margin-left: 280px;
+	text-align: center;
+	margin-top: -70px;
+	padding-bottom: 20px;
+}
+
+
+/* Body Content */
+
+#content {
+	background-color: #808080;
+	padding: 20px;
+}
+
+#account {
+	color: #fff;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+
+/* Form */
+
+
+#form_signup {
+	width: 150px;
+	background-color: #f9c20a;
+	margin-left: 600px;
+	margin-top: 30px;
+	padding: 20px;
+}
+	
+	
+/* Image */		
+	
+img {
+	width: 500px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+
+/* Buttons/Links */
+
+#header_btns {
+	float: right;
+	margin-top: 30px;
+}
+
+#header_btns > a, #signup_wrapper > a {
+	text-decoration: none;
+	color: #454545;
+}
+
+#home_header, #signup_header, #signup_btn {
+	margin-right: 10px;
+	background: #fff;
+	border: 1px solid #000;
+	border-radius: 0.3em;
+	padding: 10px;
+	box-shadow: 2px 2px #000;
+}
+
+#signup_btn {
+	margin-left: 630px;
+}
+
+#help_header {
+	margin-right: 50px;
+	background: #fff;
+	border: 1px solid #000;
+	border-radius: 0.3em;
+	padding: 10px;
+	box-shadow: 2px 2px #000;
+}
+
+
+/* Footer */
+
+footer {
+	border-top: 1px solid #000;
+}
+
+h4 {
+	margin-left: 38px;
+}
+
+.footer_nav > a {
+	list-style-type: none;
+	text-decoration: none;
+	color: #808080
+}
+
+section {
+	display: inline-block;
+	margin-left: 207px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+#copyright {
+	text-align: center;
+	margin-top: 40px;
+}
