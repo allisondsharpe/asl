@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<title> Success! </title>
 	<link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.css"); ?>" />
 	<script src="<?php echo base_url(); ?>js/main.js"></script>
 	<link href="<?php echo base_url() ; ?>css/style.css" type="text/css" rel="stylesheet" />
@@ -12,9 +13,9 @@
 
 	<div id="content">
 	
-		<h2> Congratulations, You are signed up and ready to post content! </h2> 
+		<h2 id="success_heading"> Congratulations, You are signed up and ready to post content! </h2> 
 	
-		<a href="http://localhost/app/index.php/user_entries/dashboard"> Go to your account </a>
+		<div id="success_btn"><a href="http://localhost/app/index.php/user_entries/dashboard"> Go to your account </a></div>
 	
 	</div>
 	

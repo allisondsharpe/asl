@@ -11,46 +11,50 @@
 		
 	<div id="content">
 	
+		<h2 id="signup_heading"> Sign Up Today for Free! </h2>
+	
 		<!--- Sign Up Form --->
+		<div id="form_signup">
+				
+			<?=form_open(base_url() . 'index.php/user_signup/') ?>
 		
-		<?=form_open(base_url() . 'index.php/user_signup/') ?>
-		
-			<table cellspacing='3' cellpadding='3'>
+				<table id="signup_table" cellspacing='3' cellpadding='3'>
 			
-				<tr><td> 
-				<!-- set_value leaves information in input fields when user refreshes --->
-				First Name: <td> <?=form_input(array('name' => 'firstname', 'value' => set_value('firstname'))) ?>
-				<td> <?=form_error('firstname') ?></td></tr>
+					<tr><td> 
+					<!-- set_value leaves information in input fields when user refreshes --->
+					<label class="signup_label"> First Name: </label><td> <?=form_input(array('name' => 'firstname', 'value' => set_value('firstname'))) ?>
+					<td> <?=form_error('firstname') ?></td></tr>
 				
-				<tr><td> 
-				Last Name: <td> <?=form_input(array('name' => 'lastname', 'value' => set_value('lastname'))) ?>
-				<td> <?=form_error('lastname') ?></td></tr>
+					<tr><td> 
+					<label class="signup_label"> Last Name: </label><td> <?=form_input(array('name' => 'lastname', 'value' => set_value('lastname'))) ?>
+					<td> <?=form_error('lastname') ?></td></tr>
 				
-				<tr><td> 
-				Email Address: <td> <?=form_input(array('name' => 'email', 'value' => set_value('email'))) ?>
-				<td> <?=form_error('email') ?></td></tr>
+					<tr><td> 
+					<label class="signup_label"> Email Address: </label><td> <?=form_input(array('name' => 'email', 'value' => set_value('email'))) ?>
+					<td> <?=form_error('email') ?></td></tr>
 				
-				<tr><td> 
-				Username: <td> <?=form_input(array('name' => 'username', 'value' => set_value('username'))) ?>
-				<td> <?=form_error('username') ?></td></tr>
+					<tr><td> 
+					<label class="signup_label"> Username: </label><td> <?=form_input(array('name' => 'username', 'value' => set_value('username'))) ?>
+					<td> <?=form_error('username') ?></td></tr>
 				
-				<tr><td> 
-				Password: <td> <?=form_input(array('name' => 'password')) ?>
-				<td> <?=form_error('password') ?></td></tr>
+					<tr><td> 
+					<label class="signup_label"> Password: </label><td> <?=form_input(array('name' => 'password')) ?>
+					<td> <?=form_error('password') ?></td></tr>
 				
-				<tr><td> 
-				Confirm Password: <td> <?=form_input(array('name' => 'confirm_pass')) ?>
-				<td> <?=form_error('confirm_pass') ?></td></tr>
+					<tr><td> 
+					<label class="signup_label"> Confirm Password: </label><td> <?=form_input(array('name' => 'confirm_pass')) ?>
+					<td> <?=form_error('confirm_pass') ?></td></tr>
 				
 				
-				<tr><td> 
-					<?=form_submit(array('name' => 'submit', 'value' => 'Sign Up')) ?>
-				</td></tr>
+					<tr><td> 
+						<?=form_submit(array('name' => 'submit', 'value' => 'Sign Up', 'id' => 'signup_submit')) ?>
+					</td></tr>
 			
-			</table> 
+				</table> 
 		
-		<?=form_close(); ?>
-		
+			<?=form_close(); ?>
+			
+		</div>
 	
 	</div>
 	

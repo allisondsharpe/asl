@@ -13,39 +13,35 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<div id="content">
 	
-		<form action="<?php echo site_url('index.php/user_entries/savedata'); ?>" method="post">
+			<form class="form_entries" action="<?php echo site_url('index.php/user_entries/savedata'); ?>" method="post">
 
-			<!---- Add/Create ----->
-		
-			<h1> Add a New Entry: </h1> 
-	
-			<table>
+				<!---- Add/Create ----->
 			
-				<tr>
-					<td> Title </td>
-					<td> : </td>
-					<td><input type="text" name="title"></td>
-				</tr>
+				<table class="table_container" id="add_table">
 			
-				<tr>
-					<td> Date </td>
-					<td> : </td>
-					<td><input type="text" name="date"></td>
-				</tr>
-		
-				<tr>
-					<td> Content </td>
-					<td> : </td>
-					<td><input type="text" name="content"></td>
-				</tr>
+					<tr>
+						<td> Title: </td>
+						<td><input type="text" name="title"></td>
+					</tr>
 			
-				<tr>
-					<input type="submit" value="Save" name="submit"> 
-				</tr>
+					<tr>
+						<td> Date: </td>
+						<td><input type="text" name="date"></td>
+					</tr>
 		
-			</table>
+					<tr>
+						<td> Content: </td>
+						<td><textarea name="content"></textarea></td>
+					</tr>
 		
-		</form>
+				</table>
+			
+				<input id="submit_btn" type="submit" value="Submit" name="submit"> 
+
+		
+			</form>
+			
+		</div>
 		
 	</div>
 

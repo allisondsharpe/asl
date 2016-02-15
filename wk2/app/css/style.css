@@ -1,36 +1,43 @@
-/* Body/Container elements */
-
-body {
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-
 /* Header */
+
 
 #home_heading {
 	background-color: #4d4d4d;
-	font-family: "Noteworthy Bold";
 	border-bottom: 1px solid #000;
 }
 
-#site_heading {
+#site_heading, #entries_heading {
 	background-color: #4d4d4d;
-	font-family: "Noteworthy Bold";
 	border-bottom: 1px solid #000;
 	height: 100px;
 }
 
-h1 {
+#h1_heading {
 	color: #fff;
-	width: 800px;
-	margin-left: 280px;
+	width: 900px;
+	margin-left: 245px;
 	text-align: center;
-	margin-top: -70px;
-	padding-bottom: 20px;
+	margin-top: -100px;
+	padding-bottom: 30px;
+	font-size: 30pt;
+	text-shadow: 2px 2px #000;
+	font-family: noteworthy; 
+}
+
+#signup_heading, #success_heading {
+	color: #fff;
+	text-align: center;
 }
 
 
+
 /* Body Content */
+
+
+
+body, footer, header {
+	font-family: sans-serif;
+}
 
 #content {
 	background-color: #808080;
@@ -40,23 +47,181 @@ h1 {
 #account {
 	color: #fff;
 	text-align: center;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	font-weight: 200;
+	font-size: 12pt;
 }
+
+a:hover {
+	text-decoration: none;
+}
+
+
+/* Navigational */
+
+
+nav {
+	margin-left: 210px;
+	
+}
+
+#nav_1 a, #nav_2 a, #nav_3 a {
+	color: #000;
+	font-weight: bold;
+}
+
+#nav_1:active, #nav_2:active, #nav_3:active {
+	background-color: #f9c20a;
+	color: #000;
+}
+
+#nav_1, #nav_2, #nav_3 {
+	border: 1px solid #000;
+	box-shadow: 1px 1px #000;
+	background: #fff;
+	width: 300px;
+	padding: 20px;
+	display: inline-block;
+	margin-bottom: 20px;
+	text-align: center;
+	margin-top: 20px;
+}
+
 
 
 /* Form */
 
 
-#form_signup {
-	width: 150px;
+
+#form_login {
+	margin-left: 500px;
 	background-color: #f9c20a;
-	margin-left: 600px;
-	margin-top: 30px;
 	padding: 20px;
+	margin-right: 500px;
+	border: 2px solid #4d4d4d;
+	border-radius: 0.3em;
+	box-shadow: 1px 1px #000;
+}
+
+
+#form_signup {
+	width: 420px;
+	height: 330px;
+	background-color: #f9c20a;
+	margin: 30px 0px 20px 470px;
+	padding: 20px;
+	border: 1px solid #000;
+	box-shadow: 1px 1px #000;
+	border-radius: 0.3em;
+}
+
+#form_signup  p {
+	width: 300px;
+	margin-left: 100px;
+	color: #f9c20a;
+}
+
+
+#login_heading {
+	color: #4d4d4d;
+	font-size: 20pt;
+	width: 400px;
+	margin-left: 13px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.login_label {
+	color: #666;
+	margin-top: 15px;
+	margin-left: 23px;
+	font-weight: 400;
+	font-size: 14pt;
+}
+
+.signup_label {
+	color: #666;
+	margin-top: 15px;
+	margin-right: 5px;
+	font-weight: 400;
+	font-size: 14pt;
+	width: 170px;
+}
+
+.login_input {
+	width: 260px;
+	border: 1px solid #4d4d4d;
+	border-radius: 0.3em;
+	margin-left: 23px;
 }
 	
+#forgot_pass {
+	color: #666;
+	margin-top: 10px;
+	font-size: 12pt;
+	margin-left: 25px;
+}	
+
+
+.form_entries {
+	background-color: #4d4d4d;
+	padding: 20px;
+}
+
+textarea {
+	width: 800px;
+}
+
+
+/* Table */
+
+#table_body_wrapper {
+	background: #4d4d4d;
+	clear: left;
+}
+
+#add_table {
+	width: 1000px;
+	margin-left: 145px;
+}
+
+#edit_table {
+	width: 1000px;
+	margin-left: 170px;
+}
+
+#signup_table {
+	margin-left: 20px;
+}
+
+.table_container  tbody {
+	background-color: #fff;
+	border: 1px solid #000;
+}
+
+.table_container td {
+	padding: 20px;
+	border: 1px solid #000;
+}
+
+.table_container table a {
+	display: block;
+	color: #000;
+}
+
+.table_container th {
+	background-color: #808080;
+	color: #fff;
+	padding: 20px;
+	border: 1px solid #000;
+}
+
+
 	
-/* Image */		
+/* Image */	
+
+	
 	
 img {
 	width: 500px;
@@ -65,19 +230,24 @@ img {
 }
 
 
+
 /* Buttons/Links */
+
+
 
 #header_btns {
 	float: right;
 	margin-top: 30px;
+	font-size: 12pt;
 }
 
-#header_btns > a, #signup_wrapper > a {
+#header_btns > a, #signup_wrapper > a, #success_btn > a {
 	text-decoration: none;
-	color: #454545;
+	color: #4d4d4d;
 }
 
-#home_header, #signup_header, #signup_btn {
+#home_header, #signup_header, #signup_btn, #login_btn, #logout_header, 
+#signup_submit, #submit_btn, #save_btn, #success_btn {
 	margin-right: 10px;
 	background: #fff;
 	border: 1px solid #000;
@@ -86,8 +256,25 @@ img {
 	box-shadow: 2px 2px #000;
 }
 
+#login_btn {
+	margin-left: 119px;
+	width: 60px;
+	font-size: 12pt;
+	color: #4d4d4d;
+}
+
 #signup_btn {
-	margin-left: 630px;
+	margin-left: 633px;
+	width: 60px;
+	font-size: 12pt;
+}
+
+#signup_submit {
+	margin-left: 125px;
+	margin-top: 20px;
+	font-size: 11pt;
+	color: #4d4d4d;
+	position: absolute;
 }
 
 #help_header {
@@ -99,14 +286,34 @@ img {
 	box-shadow: 2px 2px #000;
 }
 
+#submit_btn {
+	margin-top: 50px;
+	margin-left: 623px;
+}
+
+#save_btn {
+	margin-top: 50px;
+	margin-left: 650px;
+}
+
+#success_btn {
+	width: 160px;
+	font-size: 12pt;
+	margin-left: 600px;
+	margin-top: 50px;
+}
+
+
 
 /* Footer */
+
+
 
 footer {
 	border-top: 1px solid #000;
 }
 
-h4 {
+.footer_heading {
 	margin-left: 38px;
 }
 
@@ -118,8 +325,7 @@ h4 {
 
 section {
 	display: inline-block;
-	margin-left: 207px;
-	text-align: center;
+	margin-left: 213px;
 	margin-top: 20px;
 }
 

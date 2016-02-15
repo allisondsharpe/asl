@@ -2,7 +2,7 @@
 
 <footer>
 	<section class="footer_sec">
-		<h4> About Us </h4>
+		<h4 class="footer_heading"> About Us </h4>
 		<ul class="footer_nav">
 			<a href=""><li class="footer_items">Who We Are</li></a>
 			<a href=""><li class="footer_items">Privacy Policy</li></a>
@@ -10,7 +10,7 @@
 		</ul>
 	</section>
 	<section class="footer_sec">
-		<h4> Contact </h4>
+		<h4 class="footer_heading"> Contact </h4>
 		<ul class="footer_nav">
 			<a href=""><li class="footer_items">Locate our Address</li></a>
 			<a href=""><li class="footer_items">Call Us</li></a>
@@ -18,7 +18,7 @@
 		</ul>
 	</section>
 	<section class="footer_sec">
-		<h4> Help Center </h4>
+		<h4 class="footer_heading"> Help Center </h4>
 		<ul class="footer_nav">
 			<a href=""><li class="footer_items">Customer Service</li></a>
 			<a href=""><li class="footer_items">Getting Started</li></a>

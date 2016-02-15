@@ -46,7 +46,9 @@ class User_signup extends CI_Controller { /* 'User_signup' controller created fo
 		/* verifying if the form was submitted */
 		
 		if($this->form_validation->run() != true) {
+			$this->load->view('site_header');
 			$this->load->view('signup'); /* if form returns false, it will remain on the 'signup' view page */
+			$this->load->view('site_footer');
 		}else{
 			$form = array(); /* array created to retain user submitted data within form */
 			$form['firstname'] = $this->input->post('firstname');

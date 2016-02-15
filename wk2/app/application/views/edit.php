@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>CRUD</title>
+	<title>Update Your Entry</title>
 	<style>
 	</style>
 </head>
@@ -16,33 +16,31 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		
 		<!-- Create content -->
 
-		<table>
-		
-			<input type="text" name="id" value="<?php echo $r->id;  ?>">
+		<table class="table_container" id="edit_table">
+					
+			<tr>
+				<td> ID </td>
+				<td><input type="text" name="id" value="<?php echo $r->id;  ?>"></td>
+			</tr>
 				
 			<tr>
 				<td> Title </td>
-				<td> : </td>
 				<td><input type="text" name="title" value="<?php echo $r->title;  ?>"></td>
 			</tr>
 			
 			<tr>
 				<td> Date </td>
-				<td> : </td>
 				<td><input type="text" name="date" value="<?php echo $r->date;  ?>"></td>
 			</tr>
 		
 			<tr>
 				<td> Content </td>
-				<td> : </td>
-				<td><input type="text" name="content" value="<?php echo $r->content;  ?>"></td>
-			</tr>
-			
-			<tr>
-				<input type="submit" value="Save" name="submit"> 
+				<td><textarea name="content" value="<?php echo $r->content;  ?>"></textarea>
 			</tr>
 		
 		</table>
+		
+		<input id="save_btn" type="submit" value="Save" name="submit"> 
 		
 	</form>
 

@@ -18,18 +18,19 @@ class user_entries extends CI_Controller { /* controller 'user_entries' created 
 	}
 	
 	function new_table() { /* loads nav view file to 'new_table' */
-		$this->load->view("site_header");
+		$this->load->view("entries_header");
 		$this->load->view('nav');
 		$this->load->view('new_table');
 		$this->load->view("site_footer");
 	}
 	
 	function dashboard() { /* loads nav view file to 'dashboard' */
-		$this->load->view("site_header");
+		$this->load->view("entries_header");
 		$this->load->view('nav');
 		$this->load->view('dashboard');
 		$this->load->view("site_footer");
 	}
+
 	
 	/* create */
 	
@@ -53,7 +54,11 @@ class user_entries extends CI_Controller { /* controller 'user_entries' created 
 	{
 		$row = $this->m->getonerow($id);
 		$data['r'] = $row;
+		$this->load->view("entries_header");
+		$this->load->view('nav');
+		$this->load->view('dashboard');
 		$this->load->view('edit', $data);
+		$this->load->view("site_footer");
 	}
 		
 	function update($id) /* function update created to enable the user to edit their entry by one row at a time */
