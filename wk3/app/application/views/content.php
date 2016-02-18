@@ -9,6 +9,43 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<script src="<?php echo base_url(); ?>js/main.js"></script>
 	<link href="<?php echo base_url() ; ?>css/style.css" type="text/css" rel="stylesheet" />
 </head>
+<style>
+
+	.form_entries {
+		padding: 20px;
+		background-color: #4d4d4d;
+		width: 1228px;
+		margin-left: 71px;
+	}
+	
+	.table_container {
+		width: 1188px;
+	}
+	
+	#table_body_wrapper {
+		background: #4d4d4d;
+		clear: left;
+	}
+
+	.table_container  tbody {
+		background-color: #eee;
+		border: 1px solid #000;
+	}
+
+	.table_container td {
+		padding: 20px;
+		border: 1px solid #000;
+	}
+
+	.table_container th {
+		background-color: #808080;
+		color: #fff;
+		padding: 20px;
+		border: 1px solid #000;
+		width: 200px;
+	}
+	
+</style>
 
 <body>
 

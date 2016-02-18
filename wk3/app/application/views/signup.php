@@ -8,54 +8,56 @@
 	<link href="<?php echo base_url() ; ?>css/style.css" type="text/css" rel="stylesheet" />
 </head>
 <style>
-#signup_heading {
-	color: #fff;
-	text-align: center;
-}
 
-#form_signup {
-	width: 420px;
-	height: 330px;
-	background-color: #f9c20a;
-	margin: 30px 0px 20px 470px;
-	padding: 20px;
-	border: 1px solid #000;
-	box-shadow: 1px 1px #000;
-	border-radius: 0.3em;
-}
+	#signup_heading {
+		color: #fff;
+		text-align: center;
+	}
 
-#form_signup  p {
-	width: 300px;
-	margin-left: 100px;
-	color: #f9c20a;
-}
+	#form_signup {
+		width: 420px;
+		height: 330px;
+		background-color: #f9c20a;
+		margin: 30px 0px 20px 470px;
+		padding: 20px;
+		border: 1px solid #000;
+		box-shadow: 1px 1px #000;
+		border-radius: 0.3em;
+	}
 
-.signup_label {
-	color: #666;
-	margin-top: 15px;
-	margin-right: 5px;
-	font-weight: 400;
-	font-size: 14pt;
-	width: 170px;
-}
+	#form_signup  p {
+		width: 300px;
+		margin-left: 100px;
+		color: #f9c20a;
+	}
 
-#signup_table {
-	margin-left: 20px;
-}
+	.signup_label {
+		color: #666;
+		margin-top: 15px;
+		margin-right: 5px;
+		font-weight: 400;
+		font-size: 14pt;
+		width: 170px;
+	}
 
-#signup_submit {
-	margin-right: 10px;
-	background: #fff;
-	border: 1px solid #000;
-	border-radius: 0.3em;
-	padding: 10px;
-	box-shadow: 2px 2px #000;
-	margin-left: 125px;
-	margin-top: 20px;
-	font-size: 11pt;
-	color: #4d4d4d;
-	position: absolute;
-}
+	#signup_table {
+		margin-left: 20px;
+	}
+
+	#signup_submit {
+		margin-right: 10px;
+		background: #fff;
+		border: 1px solid #000;
+		border-radius: 0.3em;
+		padding: 10px;
+		box-shadow: 2px 2px #000;
+		margin-left: 125px;
+		margin-top: 20px;
+		font-size: 11pt;
+		color: #4d4d4d;
+		position: absolute;
+	}
+
 </style>
 <body>
 		

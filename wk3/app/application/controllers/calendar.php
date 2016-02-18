@@ -3,7 +3,7 @@
 class Calendar extends CI_Controller { /* controller 'Calendar' created for 'calendar' view */
 	
 	public function index() { /* will load 'calender_view' as default page */
-		$this->load->view("site_header");
+		$this->load->view("entries_header");
 		$this->load->view("calendar_view");
 		$this->load->view("site_footer");
 		

@@ -52,7 +52,7 @@ class user_entries extends CI_Controller { /* controller 'user_entries' created 
 	
 	function content() /* function content created to enable the user to simply view their content by clicking the 'read' option within the dashboard */
 	{	
-		$this->load->view('site_header');
+		$this->load->view('entries_header');
 		$this->load->view('nav');
 		$this->load->view('content');
 		$this->load->view('site_footer');
@@ -94,5 +94,12 @@ class user_entries extends CI_Controller { /* controller 'user_entries' created 
 		$this->db->delete('data');
 		redirect('index.php/user_entries/dashboard');
 	}
+	
+	public function logout() /* 'logout' will destroy the user's session once they click this button within the dashboard */
+    {
+        $this->session->sess_destroy();
+        redirect('index.php/site/content_home');
+    }
+	
 	
 }

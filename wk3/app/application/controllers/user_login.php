@@ -32,7 +32,6 @@ class User_login extends CI_Controller { /* 'User_login' controller created for 
 				echo "<script> alert ('Error! Please try logging in again.'); </script>"; /* if an error occurs, user will receive this message created using Javascript */
 			}
 		}
-	}
 
 }
 

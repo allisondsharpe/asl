@@ -1,3 +1,32 @@
+<style>
+	
+	footer {
+		border-top: 1px solid #000;
+	}
+
+	.footer_heading {
+		margin-left: 38px;
+	}
+
+	.footer_nav > a {
+		list-style-type: none;
+		text-decoration: none;
+		color: #808080
+	}
+
+	section {
+		display: inline-block;
+		margin-left: 213px;
+		margin-top: 20px;
+	}
+
+	#copyright {
+		text-align: center;
+		margin-top: 40px;
+	}
+	
+</style>
+
 <!-- Footer created for website -->
 
 <footer>

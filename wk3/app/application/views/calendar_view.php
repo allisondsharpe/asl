@@ -6,7 +6,6 @@
 	<link rel="shortcut icon" type="image/ico" href="<?php echo base_url("assets/images/favicon.ico"); ?>"/>
 	<link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.css"); ?>" />
 	<script src="<?php echo base_url(); ?>js/main.js"></script>
-	<link href="<?php echo base_url() ; ?>css/calendar.css" type="text/css" rel="stylesheet" />
 	<link href="<?php echo base_url() ; ?>css/style.css" type="text/css" rel="stylesheet" />
 </head>
 <style>
