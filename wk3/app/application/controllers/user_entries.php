@@ -50,12 +50,15 @@ class user_entries extends CI_Controller { /* controller 'user_entries' created 
 	
 	/* read */
 	
-	function content() /* function content created to enable the user to simply view their content by clicking the 'read' option within the dashboard */
-	{	
-		$this->load->view('entries_header');
+	
+	function content($id) /* function 'edit' created to enable 'getonerow' from the model 'entries_model' when user selects the action 'edit' within an entry */
+	{
+		$row = $this->m->getonerow($id);
+		$data['r'] = $row;
+		$this->load->view("entries_header");
 		$this->load->view('nav');
-		$this->load->view('content');
-		$this->load->view('site_footer');
+		$this->load->view('content', $data);
+		$this->load->view("site_footer");
 	}
 	
 	/* update */

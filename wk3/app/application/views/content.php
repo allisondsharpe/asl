@@ -27,22 +27,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		clear: left;
 	}
 
-	.table_container  tbody {
+	.table_container tbody {
 		background-color: #eee;
-		border: 1px solid #000;
 	}
 
 	.table_container td {
 		padding: 20px;
-		border: 1px solid #000;
 	}
 
 	.table_container th {
-		background-color: #808080;
 		color: #fff;
 		padding: 20px;
-		border: 1px solid #000;
 		width: 200px;
+	}
+	
+	.content_data {
+		clear: left;
 	}
 	
 </style>
@@ -51,9 +51,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<div id="content">
 		
-			<!---- View/Edit/Delete content ----->
+			<!---- View content ----->
 	
-			<form class="form_entries" action="<?php echo site_url('index.php/user_entries/edit'); ?>" method="post">
+			<form class="form_entries" action="<?php echo site_url('index.php/user_entries/dashboard'); ?>" method="post">
 
 				<table class="table_container">
 						<thead> <!-- table headers -->
@@ -76,9 +76,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								?>
 			
 							</tbody>
-						
-						</div>
-					
+						</div>				
 				</table>
 		
 			</form>	

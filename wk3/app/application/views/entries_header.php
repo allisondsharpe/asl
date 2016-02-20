@@ -42,9 +42,9 @@
 
 	<div id="header_btns"> 	
 		<a href="<?php echo base_url() ; ?>index.php/site/home" id="home_header"> Home </a>
-		<a href="<?php echo base_url() ; ?>index.php/site/home/logout" id="logout_header"> Logout </a>
+		<a href="<?php echo base_url() ; ?>index.php/site/home/logout" name="logout" id="logout_header"> Logout </a>
 	</div>
 			
-	<img src="<?php echo base_url() ; ?>images/logo.png">
+	<a href="http://localhost/app/index.php/"><img src="<?php echo base_url() ; ?>images/logo.png"></a>
 					
 </header>

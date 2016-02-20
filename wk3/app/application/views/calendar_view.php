@@ -12,56 +12,82 @@
 
 .calendar {
     font-family: sans-serif;
-    width: 100%;
-    margin-top: 20px;
+    font-size: 1.0em;
 }
 
-.day_header {
-    font-weight: 400;
-    text-align: center;
-    color: #000;
-    font-size: 11pt;
+.calendar a {
+	margin-left: 30px;
 }
 
-.calendar td {
-    width: 14%;
-    border: 1px solid #000;
-    height: 100px;
-    vertical-align: top;
-    font-size: 10pt;
+table.calendar {
+	margin: auto;
 }
 
-.calendar td:hover {
+.calendar .days td {
+	width: 80px; 
+	height: 80px;
+	padding: 4px;
+	border: 1px solid #4d4d4d;
+	vertical-align: top;
+	background-color: #eee;
+}
+
+.calendar .days td:hover {
 	background-color: #f9c20a;
 }
 
-.day_listing {
-    display: block;
-    text-align: right;
-    font-size: 10pt;
-    color: #4d4d4d;
-    padding: 5px;
+.calender .highlight {
+	font-weight: bold;
+	color: #4d4d4d;
 }
 
-div.today {
-    background: #eee;
-    height: 100%;
-} 
+.title {
+	text-align: center;
+	color: #fff;
+	font-size: 1.5em;
+}
+
+.weekdays {
+	color: #fff;
+	background-color: #4d4d4d;
+	padding: 20px;
+	font-size: 1.0em;
+}
+
+.next_prev_url {
+	color: #4d4d4d;
+}
+
+#return_dash {
+	background: #fff;
+	border: 1px solid #000;
+	border-radius: 0.3em;
+	padding: 10px;
+	box-shadow: 2px 2px #000;
+	margin-top: 20px;
+	margin-left: 605px;
+	font-size: 1.0em;
+}
+
+a {
+	color: #4d4d4d;
+}
 
 </style>
 
 <body>
+
+	<!-- echoing the controller 'calendar' to the view page -->
 		
 	<div id="content">
 	
-		<?php
-	
-	
-		?>
- 
+		<?php echo $calendar; ?>
+		
+		<a href="<?php echo base_url() ; ?>index.php/user_entries/dashboard"><input id="return_dash" type="submit" value="Return to Dashboard"></a> 
+
 	</div>
 	
-
+	
 <!-- Scripts -->
 
 <script type="text/javascript" src="<?php echo base_url("assets/js/jQuery-1.10.2.js"); ?>"></script>
