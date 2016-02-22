@@ -39,6 +39,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		color: #fff;
 		padding: 20px;
 		width: 200px;
+		background-color: #808080;
 	}
 	
 	.content_data {
