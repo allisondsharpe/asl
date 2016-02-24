@@ -15,7 +15,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		padding: 20px;
 		background-color: #4d4d4d;
 		width: 1228px;
-		margin-left: 71px;
+		margin-left: 62px;
 	}
 	
 	.table_container {
@@ -33,6 +33,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	.table_container td {
 		padding: 20px;
+		border: 1px solid #000;
 	}
 
 	.table_container th {
@@ -40,6 +41,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		padding: 20px;
 		width: 200px;
 		background-color: #808080;
+		border: 1px solid #000;
 	}
 	
 	.content_data {

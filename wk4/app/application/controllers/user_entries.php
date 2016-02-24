@@ -9,6 +9,7 @@ class user_entries extends CI_Controller { /* controller 'user_entries' created 
 		
 		/* calling model */
 		$this->load->model('entries_model', 'm'); /* 'm' used as an abbreviation for 'entries_model' */
+		$this->load->library('table'); /* loading the table class for 'new_table' */
 	}
 	
 	function index() 
@@ -24,13 +25,23 @@ class user_entries extends CI_Controller { /* controller 'user_entries' created 
 		$this->load->view("site_footer");
 	}
 	
+	/* parse */
+	
 	function dashboard() { /* loads nav view file to 'dashboard' */
+		$this->load->library('parser'); /* calling 'parser' library */
+
+		$data_parse = array( /* creating array for the parse class */
+	  	'dash_title'   => 'Previous Entries',
+	  	'dash_action1' => 'Read',
+	  	'dash_action2' => 'Edit',
+	  	'dash_action3' => 'Delete'
+    	);
+    	
 		$this->load->view("entries_header");
 		$this->load->view('nav');
-		$this->load->view('dashboard');
-		$this->load->view("site_footer");
+		$this->parser->parse('dashboard', $data_parse); /* loading the dashboard view and the variable $data_parse */
+		$this->load->view("site_footer");	
 	}
-
 	
 	/* create */
 	
@@ -69,9 +80,20 @@ class user_entries extends CI_Controller { /* controller 'user_entries' created 
 		$data['r'] = $row;
 		$this->load->view("entries_header");
 		$this->load->view('nav');
-		$this->load->view('dashboard');
 		$this->load->view('edit', $data);
+		
+		$this->load->library('parser'); /* calling 'parser' library */
+
+		$data_parse = array( /* creating array for the parse class */
+	  	'dash_title'   => 'Previous Entries',
+	  	'dash_action1' => 'Read',
+	  	'dash_action2' => 'Edit',
+	  	'dash_action3' => 'Delete'
+    	);
+    	
+    	$this->load->view('dashboard', $data_parse);
 		$this->load->view("site_footer");
+	
 	}
 		
 	function update($id) /* function update created to enable the user to edit their entry by one row at a time */
@@ -87,6 +109,7 @@ class user_entries extends CI_Controller { /* controller 'user_entries' created 
 		$this->db->where('id', $id); /* grabbing row 'id' from the database */
 		$this->db->update('data', $data);
 		redirect('index.php/user_entries/dashboard');
+
 	}
 	
 	/* delete */

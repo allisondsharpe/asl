@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Previous Entries</title>
+	<title>{dash_title}</title>
 	<link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.css"); ?>" />
 	<script src="<?php echo base_url(); ?>js/main.js"></script>
 	<link href="<?php echo base_url() ; ?>css/style.css" type="text/css" rel="stylesheet" />
@@ -75,9 +75,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										echo "<tr>
 												<td>$row->title</td>
 												<td>$row->date</td>
-												<td><a href='".site_url('index.php/user_entries/content/' .$row->id)."'>Read</a> 
-													<a href='".site_url('index.php/user_entries/edit/' .$row->id)."'>Edit</a>
-													<a href='".site_url('index.php/user_entries/delete/' .$row->id)."'>Delete</a>
+												<td><a href='".site_url('index.php/user_entries/content/' .$row->id)."'>{dash_action1}</a> 
+													<a href='".site_url('index.php/user_entries/edit/' .$row->id)."'>{dash_action2}</a>
+													<a href='".site_url('index.php/user_entries/delete/' .$row->id)."'>{dash_action3}</a>
 												</td>
 											 </tr>";
 									}

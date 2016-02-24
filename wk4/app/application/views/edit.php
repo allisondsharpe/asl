@@ -87,6 +87,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</table>
 			
 			<input id="save_btn" type="submit" value="Save" name="submit"> 
+
 			
 		</div>	
 				

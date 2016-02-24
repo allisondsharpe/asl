@@ -11,10 +11,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <style> 
 
-	.form_entries {
-		padding: 20px;
-	}
-	
 	#add_wrapper {
 		background-color: #4d4d4d;
 		padding: 20px;
@@ -28,30 +24,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	
 	textarea {
 		padding: 20px;
-		width: 800px;
-	}
-
-	#add_table {
-		width: 1188px;
+		width: 400px;
 	}
 	
 	.table_container {
 		background-color: #eee;
 		border: 1px solid #000;
+		width: 1190px;
 	}
 
 	.table_container td {
 		padding: 20px;
-		border: 1px solid #000;
+		border-right: 1px solid #000;
 		font-size: 1.0em;
 	}
 	
 	.table_container th {
-		background-color: #808080;
 		color: #fff;
 		padding: 20px;
-		border: 1px solid #000;
-		width: 200px;
+		background-color: #808080;
+		border-right: 1px solid #000;
 	}
  
 	#submit_btn {
@@ -66,6 +58,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	}
 
 
+
 </style> 
 <body>
 
@@ -76,39 +69,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<!---- Add/Create ----->
 				
 				<div id="add_wrapper">
-					
-					<table class="table_container" id="add_table">
-					
-						<tr>
-							<th>Entry Specifications:</th>
-							<th>Entry Fields:</th>
-						</tr>
-		
-						<tr>
-							<td> Title: </td>
-							<td><input type="text" name="title" placeholder='Ex: "My Title"'></td>
-						</tr>
-		
-						<tr>
-							<td> Date: </td>
-							<td><input type="text" name="date" placeholder="Format: YYYY-MM-DD"></td>
-						</tr>
-	
-						<tr>
-							<td> Content: </td>
-							<td><textarea name="content" placeholder="Tell us your life story. Max: 500 words"></textarea></td>
-						</tr>
+				
+				<!-- Implementing Table class through new_table view -->
+				
+					<?php 
 						
-					</table>
-			
+						$tabledata = array (
+						array('<table class="table_container">' . '<tr>' . '<th>Title:</th>' . '<th>Date:</th>' . '<th>Content:</th>' . '</tr>' . 
+						'<tr>' . '<td><input type="text" name="title" placeholder="Ex: My Title"></td>' . '<td><input type="text" name="date" placeholder="Format: YYYY-MM-DD"></td>' . '<td><textarea name="content" placeholder="Tell us your life story. Max: 500 words"></textarea></td>' . '</tr>' . '</table>'),
+						);
+						
+						echo $this->table->generate($tabledata);
+					?>
+						
 					<input id="submit_btn" type="submit" value="Submit" name="submit"> 
 		
 				</div>		
 			
 			</form>
-			
-		</div>
-		
+					
 	</div>
 
 
