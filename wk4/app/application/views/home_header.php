@@ -22,7 +22,7 @@
 		background: #fff;
 		border: 1px solid #000;
 		border-radius: 0.3em;
-		padding: 10px;
+		padding: 12px;
 		box-shadow: 2px 2px #000;
 	}
 	
@@ -43,7 +43,7 @@
 		background: #fff;
 		border: 1px solid #000;
 		border-radius: 0.3em;
-		padding: 10px;
+		padding: 12px;
 		box-shadow: 2px 2px #000;
 	}
 

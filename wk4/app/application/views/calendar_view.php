@@ -65,8 +65,8 @@ table.calendar {
 	padding: 10px;
 	box-shadow: 2px 2px #000;
 	margin-top: 20px;
-	margin-left: 605px;
-	font-size: 1.0em;
+	margin-left: 590px;
+	font-size: 1.1em;
 }
 
 a {

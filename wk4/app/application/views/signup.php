@@ -16,7 +16,7 @@
 
 	#form_signup {
 		width: 420px;
-		height: 330px;
+		height: 360px;
 		background-color: #f9c20a;
 		margin: 30px 0px 20px 470px;
 		padding: 20px;
@@ -26,14 +26,16 @@
 	}
 
 	#form_signup  p {
-		width: 300px;
-		margin-left: 100px;
-		color: #f9c20a;
+		width: 400px;
+		margin-left: 70px;
+		margin-top: 18px;
+		color: #fff;
+		font-weight: bold;
 	}
 
 	.signup_label {
 		color: #666;
-		margin-top: 15px;
+		margin-top: 10px;
 		margin-right: 5px;
 		font-weight: 400;
 		font-size: 14pt;
